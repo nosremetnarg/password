@@ -87,12 +87,13 @@ header {
   text-align: center;
   cursor: pointer;
 }
-
-button[disabled] {
+button {
   cursor: default;
   background: #c0c7cf;
 }
-
+button:hover {
+  background-color: #ff000055;
+}
 .float-right {
   float: right;
 }
