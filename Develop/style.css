@@ -5,7 +5,7 @@
 }
 
 html,
-body,
+body, 
 .wrapper {
   height: 100%;
   margin: 0;
@@ -14,18 +14,13 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  display: flex;
+  width: 100%;
 }
 
 .wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
-
-.container {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -34,8 +29,15 @@ body {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 20px 20px;
+  display: inline;
+  align-content: center;
+  
+  /* padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;  */
 }
+
 .title {
   text-align: center;
   padding: 20px;
@@ -49,13 +51,21 @@ body {
   background: #e7e9eb;
   height: 2px;
 } 
-
-.container-body {
+.card-header {
+  border-bottom: grey solid 1px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+.card-body {
   min-height: 100px;
+  display: flex;
+  justify-content: center;
 }
 
-.footer {
+.card-footer {
   text-align: center;
+  border-top: grey solid 1px
 }
 
 .footer::before {
@@ -118,7 +128,7 @@ button:hover {
   resize: none;
   overflow: hidden;
 } */
-#passwordDisplay {
+#password {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -137,6 +147,7 @@ button:hover {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+  font-size: 2vw;
 }
 
 @media (max-width: 690px) {
@@ -159,3 +170,15 @@ button:hover {
     font-size: 0.8rem;
   }
 }
+
+/* .container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 30px 40px;
+} */
